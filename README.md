@@ -1,8 +1,6 @@
-# JarodPalindrome
+# Palindrome Detector
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/jarod_palindrome`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+jarod_palindrome is  sample Ruby gem created in Learn enough ruby to be dangerous by Micheal Hartl
 
 ## Installation
 
@@ -32,4 +30,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/jarod_palindrome.
+Bug reports and pull requests are welcome on GitHub at https://github.com/JarodMarler/jarod_palindrome.
