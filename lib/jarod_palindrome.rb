@@ -1,28 +1,28 @@
 require "jarod_palindrome/version"
 
-class String
+module JarodPalindrome
 
-# Returns true for a plaindrome, false otherwise.
-def palindrome?
-  processed_content == processed_content.reverse
-end
-
-# Returns the letters in the string.
-def letters
-  the_letters = []
-  letter_regex = /[a-z]/i
-  self.chars.each do |character|
-    if character.match(letter_regex)
-      the_letters << character
+  # Returns true for a palindrome, false otherwise.
+  def palindrome?
+    if processed_content.empty?
+      false
+    else
+      processed_content == processed_content.reverse
     end
   end
-  the_letters.join
+
+  private
+
+    # Returns content for palindrome testing.
+    def processed_content
+      self.to_s.scan(/[a-zA-Z]/i).join.downcase
+    end
 end
 
-private
+class String
+  include JarodPalindrome
+end
 
-# Returns content for palindrome testing.
-def processed_content
-  self.letters.downcase
-  end 
+class Integer
+  include JarodPalindrome
 end
